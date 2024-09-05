@@ -3,105 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segurança Total: Seu Guia Completo para Proteção</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Segurança Cibernética</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header>
-        <h1>Segurança Total</h1>
         <nav>
             <ul>
-                <li><a href="#intro">Introdução</a></li>
-                <li><a href="#ciberseguranca">Segurança Cibernética</a></li>
-                <li><a href="#fisica">Segurança Física</a></li>
-                <li><a href="#dados">Segurança de Dados</a></li>
-                <li><a href="#contato">Contato</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#seguranca-online">Segurança Online</a></li>
+                <li><a href="#protecao-dados">Proteção de Dados</a></li>
+                <li><a href="#ajuda">Ajuda</a></li>
             </ul>
         </nav>
     </header>
-    
-    <section id="intro">
-        <h2>Introdução</h2>
-        <p>Visão Geral da Segurança e o objetivo deste site.</p>
+
+    <!-- Seção Home -->
+    <section id="home">
+        <h1>Sua Segurança Online em Primeiro Lugar</h1>
+        <p>Aprenda a se proteger no mundo digital.</p>
+        <button onclick="scrollToSection('seguranca-online')">Saiba mais</button>
     </section>
 
-    <section id="ciberseguranca">
-        <h2>Segurança Cibernética</h2>
-        <article>
-            <h3>Problemas Comuns</h3>
-            <ul>
-                <li>Phishing</li>
-                <li>Malware</li>
-                <li>Ransomware</li>
-                <li>Ataques de DDoS</li>
-                <li>Fraudes Online</li>
-            </ul>
-            <h3>Soluções</h3>
-            <ul>
-                <li>Educação sobre phishing</li>
-                <li>Uso de antivírus</li>
-                <li>Backup de dados</li>
-                <li>Proteção contra DDoS</li>
-                <li>Verificação de sites</li>
-            </ul>
-        </article>
+    <!-- Tópico 1: Segurança Online -->
+    <section id="seguranca-online">
+        <h2>Segurança Online</h2>
+        <p>Proteja suas contas e dispositivos contra ameaças digitais.</p>
+
+        <!-- Quiz Interativo -->
+        <div id="quiz">
+            <h3>Teste seu Conhecimento!</h3>
+            <p>Qual é a melhor forma de proteger suas contas online?</p>
+            <button onclick="responderQuiz('resposta1')">a) Usar senhas fracas</button>
+            <button onclick="responderQuiz('resposta2')">b) Autenticação de dois fatores</button>
+        </div>
+
+        <!-- Notícias -->
+        <div id="noticias">
+            <h3>Últimas Notícias</h3>
+            <p>Leia sobre os ciberataques mais recentes e como se proteger.</p>
+        </div>
     </section>
 
-    <section id="fisica">
-        <h2>Segurança Física</h2>
-        <article>
-            <h3>Problemas Comuns</h3>
-            <ul>
-                <li>Intrusão</li>
-                <li>Roubo e Vandalismo</li>
-                <li>Segurança em Eventos</li>
-            </ul>
-            <h3>Soluções</h3>
-            <ul>
-                <li>Sistemas de alarme</li>
-                <li>Reforço de segurança física</li>
-                <li>Planejamento de segurança em eventos</li>
-            </ul>
-        </article>
+    <!-- Tópico 2: Proteção de Dados -->
+    <section id="protecao-dados">
+        <h2>Proteção de Dados</h2>
+        <p>Mantenha suas informações seguras ao navegar na internet.</p>
+        <div id="simulador-vazamento">
+            <h3>Simulador de Vazamento de Dados</h3>
+            <p>Veja o impacto de um vazamento de dados e como evitá-lo.</p>
+            <button>Iniciar Simulação</button>
+        </div>
     </section>
 
-    <section id="dados">
-        <h2>Segurança de Dados</h2>
-        <article>
-            <h3>Problemas Comuns</h3>
-            <ul>
-                <li>Violação de Dados</li>
-                <li>Perda de Dados</li>
-                <li>Proteção de Dados Pessoais</li>
-            </ul>
-            <h3>Soluções</h3>
-            <ul>
-                <li>Criptografia</li>
-                <li>Backups regulares</li>
-                <li>Conformidade com regulamentos</li>
-            </ul>
-        </article>
+    <!-- Seção de Ajuda -->
+    <section id="ajuda">
+        <h2>Ajuda</h2>
+        <div id="faq">
+            <h3>Perguntas Frequentes</h3>
+            <p>O que é phishing?</p>
+            <p>Como saber se meu dispositivo foi infectado?</p>
+        </div>
+        <div id="chatbot">
+            <h3>Chatbot</h3>
+            <p>Digite sua pergunta:</p>
+            <input type="text" id="pergunta" placeholder="Digite sua dúvida aqui">
+            <button onclick="chatbotResposta()">Enviar</button>
+            <p id="respostaChatbot"></p>
+        </div>
     </section>
 
-    <section id="contato">
-        <h2>Contato e Suporte</h2>
-        <form id="contactForm">
-            <label for="name">Nome:</label>
-            <input type="text" id="name" name="name" required>
-            
-            <label for="email">E-mail:</label>
-            <input type="email" id="email" name="email" required>
-            
-            <label for="message">Mensagem:</label>
-            <textarea id="message" name="message" required></textarea>
-            
-            <button type="submit">Enviar</button>
-        </form>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Segurança Total. Todos os direitos reservados.</p>
-    </footer>
+    <button onclick="scrollToTop()" id="topBtn">Voltar ao Topo</button>
 
     <script src="script.js"></script>
 </body>
